@@ -4,7 +4,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<!--script src="js/script.js" ></script-->
 
-	<link rel="shortcut icon" href="img/favicon.png" />
+	<link rel="shortcut icon" href="favicon.png" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js" ></script>
 	<script src="js/bootstrap.min.js"></script>
