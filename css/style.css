@@ -1,3 +1,45 @@
+body {
+    font-family: GeomanistRegular !important;
+}
+
+@font-face {
+    font-family: 'CustomCraft';
+    src: url('font/CustomCraft-Regular.woff') format('woff'),
+        url('font/Custom-Craft-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Illusion;
+    src: url(font/illusion.otf);
+}
+
+@font-face {
+    font-family: GeomanistRegular;
+    src: url(font/Geomanist/Webfont/Geomanist-Regular/geomanist-regular.woff);
+}
+
+@font-face {
+    font-family: GeomanistItalic;
+    src: url(font/Geomanist/Webfont/Geomanist-Italic/geomanist-italic.woff);
+}
+
+.craft {
+    font-family: CustomCraft;
+}
+
+.illusion {
+    font-family: Illusion;
+    font-size: 15pt;
+}
+
+.geoReg {
+    font-family: GeomanistRegular;
+}
+
+.geoIt {
+    font-family: GeomanistItalic;
+}
 
 #return-to-top {
     display: none; /* Hidden by default */
@@ -97,4 +139,12 @@ ul.timeline > li:before {
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+.big-wrap {
+    height: 250px !important;
+}
+
+.small-wrap {
+    height: 80px !important;
 }
