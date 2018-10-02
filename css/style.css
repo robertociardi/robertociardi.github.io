@@ -68,7 +68,8 @@ body {
 .border-mucchi {
     width: 100%;
     border-style: solid;
-    border-width: 5;
+    border-width: 3px !important;
+    border-radius: 10px !important;
     border-bottom-color: pink !important;
     border-right-color: pink !important;
     border-top-color: black !important;
@@ -148,3 +149,14 @@ ul.timeline > li:before {
 .small-wrap {
     height: 80px !important;
 }
+
+#cookies {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+    opacity: 0.9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
