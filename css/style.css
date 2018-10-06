@@ -41,6 +41,10 @@ body {
     font-family: GeomanistItalic;
 }
 
+.img-hdr {
+    width: 100%;
+}
+
 #return-to-top {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -160,3 +164,15 @@ ul.timeline > li:before {
     border-top-right-radius: 10px;
 }
 
+.card-border-mucchi {
+    border-style: solid;
+    border-bottom-style: none;
+    border-width: 5px;
+    border-color: black;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.player-description {
+    display: none;
+}
