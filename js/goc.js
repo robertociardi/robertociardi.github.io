@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+    /* sidebar toggler function */
+    $('#sidebar-toggler').click(function(){
+        var img = $('#sidebar-toggler > img');
+        var img_dir = '/img/icons/';
+        var sb = $('.sidebar');
+        if(sb.hasClass('hidden')){
+            img.attr("src",img_dir+"close.png");
+            sb.removeClass('hidden');
+        }
+        else{
+            img.attr("src",img_dir+"open.png");
+            sb.addClass('hidden');
+        }
+    });
     /* function activated by scrolling on the page*/
     $(window).scroll(function(){
         var top = ($(window).scrollTop());
