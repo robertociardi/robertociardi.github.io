@@ -45,6 +45,10 @@ body {
     width: 100%;
 }
 
+.goc-hdr {
+    margin-top: 60px;
+}
+
 #return-to-top {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -98,6 +102,12 @@ body {
     border-top-style: solid;
     border-top-color: pink;
     border-top-width: 5;
+}
+
+.border-b-black {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 5;
 }
 
 .border-t-black {
@@ -175,4 +185,12 @@ ul.timeline > li:before {
 
 .player-description {
     display: none;
+}
+
+p a {
+    color: #ff66cc !important;
+}
+
+p a:hover {
+    color: #ff0066 !important;
 }

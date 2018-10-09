@@ -1,0 +1,98 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+    align-items: stretch;
+}
+
+.sidebar {
+	padding: 10px;
+	width: 20%;
+	height: auto;
+	background-color: pink;
+	border-right-style: groove;
+	border-width: 1px;
+	border-color: pink;
+}
+
+.sidebar a{
+	width: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.sidebar a:hover{
+	color: #ff66cc;
+}
+
+.follow-me {
+	position: fixed;
+	top: 70;
+}
+
+.sidebar.hidden {
+	margin-left: -18%;
+}
+
+.sidebar .follower ul {
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar .follower li {
+	width: 100%;
+}
+
+.sidebar .follower img { 
+	vertical-align: baseline !important; 
+}
+
+#sidebar-toggler {
+	background-color: pink;
+	border-style: outset;
+	border-color: pink;
+	margin-left: -20px;
+}
+
+.content {
+	padding: 1%;
+	width: 100%;
+	min-width: 80%;
+	max-width: 100%;
+}
+
+.content h3 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+	width: 100%;
+}
+
+.content h3.moved {
+	padding-left: 25px;
+}
+
+.content h3.moved-down {
+	padding-top: 65px;
+}
+
+.content h4, h5 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+	width: 100%;
+}
+
+.chapter-toggler {
+	position: absolute;
+	right: 10px;
+}
+
+.chapter {
+	display: none;
+}
+
+button {
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}

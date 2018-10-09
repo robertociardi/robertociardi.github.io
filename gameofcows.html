@@ -1,0 +1,251 @@
+<html lang="en">
+<head>
+	<title> LM - Game of Cows </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/goc.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/goc.js" ></script>
+	<!--Google Maps-->
+	<!--script src="https://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script-->
+			
+</head>
+<body>
+	<nav class="fixed-top navbar padding-t-0 navbar-expand-lg navbar-light bg-light border-t-black border-b-pink">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="/img/home.png" width="50" height="50" alt="stemma"> 
+				<span class="d-lg-none d-md-none illusion">LM</span>
+				<span class="d-none d-md-inline illusion">Lokomotiv Mucchi </span>
+				<span class="d-none d-lg-inline illusion">- In lactae Vaccae robur et veritas </span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto geoReg">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="timeline.html">La storia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="squadra.html">La squadra</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Approfondimenti
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="fantamucco.html"><img src="/img/icons/cow.png" width="30" height="30" alt="cow"> Il Fantamucco</a>
+							<a class="dropdown-item" href="academylk.html"><img src="/img/icons/oscar.png" width="30" height="30" alt="awards"> Gli Academylk Awards</a>
+							<a class="dropdown-item" href="cena.html"><img src="/img/icons/steak.png" width="30" height="30" alt="steak"> La cena dei Mucchi</a>
+							<a class="dropdown-item" href="gameofcows.html"><img src="/img/icons/throne.png" width="30" height="30" alt="throne"> Game of Cows</a>
+						</div>
+					</li>
+					</ul>
+			</div>
+		</div>
+	</nav>
+	<div>
+		<img class="img-hdr img-fluid goc-hdr border-b-black" src="img/game_of_cows.jpg" alt="header game of cows img">
+	</div>
+	<div class="wrapper border-t-pink border-b-pink">
+		<div class="sidebar">
+			<div class="follower">
+				<p class="d-none d-md-block d-lg-block"><b><img src="/img/icons/throne.png" width="20" height="20" alt="throne"> GoC - Contenuti</b></p>
+				<p class="d-md-none d-lg-none"><b><img src="/img/icons/throne.png" width="20" height="20" alt="throne"> GoC</b></p>
+				<ul>
+					<li>
+						<a onclick="move_title(0);" class="d-none d-sm-block" href="#title-chapter0">Personaggi</a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter0">Pers</a>
+					</li>
+					<li>
+						<a onclick="move_title(1);" class="d-none d-sm-block" href="#title-chapter1">Capitolo 1 <span class="d-none d-lg-inline">- FLOWER</span></a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter1">Cap 1</a>
+					</li>
+					<li>
+						<a onclick="move_title(2);" class="d-none d-sm-block" href="#title-chapter2">Capitolo 2 <span class="d-none d-lg-inline">- FABY</span></a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter2">Cap 2</a>
+					</li>
+					<li>
+						<a onclick="move_title(3);" class="d-none d-sm-block" href="#title-chapter3">Capitolo 3 <span class="d-none d-lg-inline">- SAMWELL</span></a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter3">Cap 3</a>
+					</li>
+					<li>
+						<a onclick="move_title(4);" class="d-none d-sm-block" href="#title-chapter4">Capitolo 4 <span class="d-none d-lg-inline">- TOMFREY</span></a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter4">Cap 4</a>
+					</li>
+					<li>
+						<a onclick="move_title(5);" class="d-none d-sm-block" href="#title-chapter5">Capitolo 5 <span class="d-none d-lg-inline">- SARA</span></a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter5">Cap 5</a>
+					</li>
+					<li>
+						<a onclick="move_title(6);" class="d-none d-sm-block" href="#title-chapter6">Capitolo 6 <span class="d-none d-lg-inline">- CELENRSEI</span></a>
+						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter6">Cap 6</a>
+					</li>
+
+					
+				</ul>
+			</div>
+		</div>
+		<div class="content text-justify">
+			<div class="content-section">
+				<button id="sidebar-toggler"><img src="img/icons/close.png" height="20" alt="close"></button>
+				<h2>Game of Cows</h2>
+				<h3 id="trama"> Trama </h3>
+				<p class="first"><b>Chi siederà sul trono di Spiedi? </b>Questa è la domanda che tutti si pongono nei sette regni! Re Giorgio Baratheon è stato re per un po' di tempo, finchè non è uscito a comprare le sigarette, per poi non fare ritorno alla propria casa, da Celenrsei ed il figlio Tomfrey V. Da allora nei regni è il delirio! La famiglia Targaryen, espropriata del potere anni prima, vorrebbe riprovare la scalata al milione, con Giannerys che spera di usare Fabyeris come risorsa per avere un esercito di rugbisti al proprio fianco.
+				Dal canto suo anche la famiglia Stark, da sempre famiglia di polentoni, padroni del nord e della padania, vorrebbe guadagnare potere, per questo approfitta per combinare un matrimonio tra Sara Stark, la figlia primogenita, ed il principe Tomfrey V. <br> <br>In tutto questo, i fattori della notte, direttamente dal Castello Rosanero, lanciano un grido di aiuto... qualcuno lo accoglierà?</p>
+			</div>
+			<div class="content-section">
+				<h3 id="title-chapter0"> Personaggi </h3>
+				<h4><img src="/img/icons/pink_wolf.png" width="20" height="20" alt="stark"> Gli Stark  <button class="chapter-toggler" onclick="toggle_chapter(0);"><img id="toggler-img-0" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<div class="chapter" id="chapter0">
+					<h5>Flower Stark</h5>
+					<p>Figlio di Caterina Stark, è l'ultimo della famiglia ed è costretto a letto a causa di un infortunio. Si annega nell'alcool assieme al fedele amico Maporax, in attesa che la sua storyline prosegua. Apparentemente il suo ruolo è quello di essere inutile... che lo sia davvero? </p>
+					<h5>Sara e Ilaria Stark</h5>
+					<p>Le sorelle Stark sono unite da un odio profondo, che solo due sorelle possono provare. Sara è innamorata del principe Tomfrey e sogna lunghe cavalcate... sul suo cavallo. Ilaria cova vendetta e tiene un libro nero su cui annota le persone che le hanno fatto un torto, in attesa di renderglielo.</p>
+					<h5>J. Rogo e Robb Stark</h5>
+					<p>J. Rogo e Robb Stark sono gli altri fratelli della famiglia Stark, per ora giocano nel fango.</p>
+					<h5>J. Rogo e Robb Stark</h5>
+					<p>J. Rogo e Robb Stark sono gli altri fratelli della famiglia Stark, per ora giocano nel fango.</p>
+				</div>
+				<h4><img src="/img/icons/pink_dragon.png" width="20" height="20" alt="targaryen"> I Targaryen  <button class="chapter-toggler" onclick="toggle_chapter(1);"><img id="toggler-img-1" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<div class="chapter" id="chapter1">
+					<h5>Fabyeris Targaryen</h5>
+					<p>Figlio di Caterina Stark, è l'ultimo della famiglia ed è costretto a letto a causa di un infortunio. Si annega nell'alcool assieme al fedele amico Maporax, in attesa che la sua storyline prosegua. Apparentemente il suo ruolo è quello di essere inutile... che lo sia davvero? </p>
+					<h5>Giannerys Targaryen</h5>
+					<p>Le sorelle Stark sono unite da un odio profondo, che solo due sorelle possono provare. Sara è innamorata del principe Tomfrey e sogna lunghe cavalcate... sul suo cavallo. Ilaria cova vendetta e tiene un libro nero su cui annota le persone che le hanno fatto un torto, in attesa di renderglielo.</p>
+				</div>
+				<h4><img src="/img/icons/pink_lion.png" width="20" height="20" alt="lion"> I Lannister/Baratheon  <button class="chapter-toggler" onclick="toggle_chapter(2);"><img id="toggler-img-2" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<div class="chapter" id="chapter2">
+					<h5>Celenrsei Lannister</h5>
+					<p>Figlio di Caterina Stark, è l'ultimo della famiglia ed è costretto a letto a causa di un infortunio. Si annega nell'alcool assieme al fedele amico Maporax, in attesa che la sua storyline prosegua. Apparentemente il suo ruolo è quello di essere inutile... che lo sia davvero? </p>
+					<h5>Tomfrey V</h5>
+					<p>Le sorelle Stark sono unite da un odio profondo, che solo due sorelle possono provare. Sara è innamorata del principe Tomfrey e sogna lunghe cavalcate... sul suo cavallo. Ilaria cova vendetta e tiene un libro nero su cui annota le persone che le hanno fatto un torto, in attesa di renderglielo.</p>
+				</div>
+				<h4> <img src="/img/icons/pink_boar.png" width="20" height="20" alt="others">Altri Personaggi  <button class="chapter-toggler" onclick="toggle_chapter(3);"><img id="toggler-img-3" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<div class="chapter" id="chapter3">
+					<h5>Sir Vezzish</h5>
+					<p>Figlio di Caterina Stark, è l'ultimo della famiglia ed è costretto a letto a causa di un infortunio. Si annega nell'alcool assieme al fedele amico Maporax, in attesa che la sua storyline prosegua. Apparentemente il suo ruolo è quello di essere inutile... che lo sia davvero? </p>
+					<h5>Baccys</h5>
+					<p>Le sorelle Stark sono unite da un odio profondo, che solo due sorelle possono provare. Sara è innamorata del principe Tomfrey e sogna lunghe cavalcate... sul suo cavallo. Ilaria cova vendetta e tiene un libro nero su cui annota le persone che le hanno fatto un torto, in attesa di renderglielo.</p>
+					<h5>Khal Rogo</h5>
+					<p>J. Rogo e Robb Stark sono gli altri fratelli della famiglia Stark, per ora giocano nel fango.</p>
+					<h5>Samwell Baji</h5>
+					<p>J. Rogo e Robb Stark sono gli altri fratelli della famiglia Stark, per ora giocano nel fango.</p>
+				</div>
+			</div>
+			<h3 id="title-chapter1"> Capitolo 1 - FLOWER <button class="chapter-toggler" onclick="toggle_chapter(4);"><img id="toggler-img-4" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button>
+			</h3>
+			<div class="chapter" id="chapter4">
+				<div class="row">
+					<div class="col-md-4">
+						immagine
+					</div>
+					<div class="col-md-8 text-justify">
+						<p>Flower stava pascolando nel prato, quando ad un tratto vide una strana mucca trotterellante. Era una mucca vecchia, che aveva l'aria di esser stanca, ma che allo stesso tempo correva a perdifiato nella prateria. Il corpo era smunto, con il tipico manto bianco a macchie nere. L'unica piccola stranezza era nel volto, dove, al di sopra dei due occhi, se ne trovava un terzo, che scrutava l'aere in modo rispettoso. Ad un tratto Flower si ritrovò a vedere la scena da una nuova angolazione, non vedeva più la mucca con tre occhi, era diventato egli stesso la mucca con tre occhi, e correva di quà e di là, senza riuscire a fermarsi, come alla ricerca spasmodica di un qualcosa di molto lontano. E mentre correva cambiava di nuovo angolazione, in un momento era la mucca con tre occhi, subito dopo osservava la mucca con tre occhi, impotente, come se potesse assistere alla scena dall'esterno. Poi si svegliò. <br> <br> Gli ultimi mesi erano stati un vero calvario per Bomber Flower, dopo quella partita di calcetto in cui aveva subìto il maledetto infortunio, che lo costringeva lontano dai campi, non era più tornato lo stesso. Forse anche perchè, per la botta, aveva dimenticato molto della sua vita precedente: non ricordava il sapore della parmigiana di melanzane di Caterina, così come aveva dimenticato l'odore del Negroni appena fatto, o peggio ancora aveva rimosso il sapodore della parmigiana di negroni(?), che Caterina gli preparava all'8bit. Adesso erano arrivati quelli strani sogni, ormai ricorrenti, in cui una mucca tensing (o era lui stesso?), vagava, correndo, come, purtroppo, non aveva più potuto fare Bomber Flower. Invidiava i suoi fratelli J. Rogo e Rob, che giocavano a rimpiattino dopo desinare, diciamo dai'tocco in poi, e a volte si avvicinava alla finestra della propria camera per guardarli correre, divertirsi e prendersi a ciaffate nel fango del cortile. Il suo più caro amico invece era diventato Maporax, un tipo alto, biondo, che ripeteva sempre il suo stesso nome, ma che gli faceva compagnia quando guardavano "Tori & Mucche" su canale 5, "La Fattoria" e le partite del campionato dei 7 regni di squash. Mentre Flower era assorto nei suoi pensieri, cercando di scacciare il sogno appena fatto, che gli provocava una certa inquietudine, Caterina entrò dalla porta con la cena: "Si mangia, Flowy". Il Bomber annusò l'aria: "Mi hai fatto la peperonata?" Caterina, sconsolata, lasciò cadere a terra la parmigiana e corse in bagno a piangere, nel contempo Flower si trascinò a terrà e degustò la parmigiana di melanzane, confondendone il gusto con quello di un risotto allo zafferano, col sorriso negli occhi ed un urlo nel cuore.</p>
+					</div>
+				</div>
+			</div>
+			<h3 id="title-chapter2"> Capitolo 2 - FABY <button class="chapter-toggler" onclick="toggle_chapter(5);"><img id="toggler-img-5" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button>
+			</h3>
+			<div class="chapter" id="chapter5">
+				<div class="row">
+					<div class="col-md-4">
+						immagine
+					</div>
+					<div class="col-md-8 text-justify">
+						<p>La stirpe dei draghi doveva tornare sul trono, o almeno questo era il chiodo fisso di Giannerys. Da quando avevano perso il potere a favore di un governo tecnico, di transizione, guidato dai Baratheon, gli ultimi eredi della famiglia Targaryen erano stati costretti a rifugiarsi ad Oriente ed a familiarizzare con le rozze famiglie di queste terre. Giannerys e Fabyerys erano due principi fuggitivi e volevano soltanto reinstaurare il proprio potere. A dir la verità a Fabyerys non importava molto, era una ragazza nel fiore della sua età, dai lunghi capelli biondi, e non aspettava altro che un bell'erasmus nella patria del turismo low cost, per togliere il freno alle proprie inibizioni. Giannerys, la cui folta chioma aveva ormai assunto le sembianze di un uovo di drago (Filippo), era di ben altro avviso, e già raccoglieva accoliti nelle terre inesplorate, col desiderio di tornare a casa alla guida di un folto esercito. Per fare ciò aveva inizialmente aperto un blog dove denunciava le nefandezze del nuovo re, dopodichè, grazie alle firme dei suoi duecento follower di Twitter, aveva organizzato un matrimonio di interessi, tra l'erede della sua nobile famiglia, Fabyerys, ed il capo della più grande squadra di rugbisti dell'oltremare, Khal Rogo. <br><br>Rogo era un tipo semplice, bastava vedere i suoi like su instagram per capirlo, e quando aveva visto le poppe (mammelle ndm) di Fabyerys aveva subito accettato il matrimonio, dando poca importanza alla proposta di un accordo di governo, volto a rovesciare l'attuale potere nei 7 regni. Poco male per Giannerys, che aveva bisogno di Rogo soltanto per i suoi rugbisti, il più feroce esercito d'Oriente, che i libri orientali, che nessuno sapeva leggere, nè forse scrivere, descrivevano come un esercito di superuomini: si diceva che da una loro mischia si fosse generato l'universo e che la terra avesse preso a girare solo dopo essere stata lanciata in touche per favorire una ripartenza. Erano ciò che serviva a Giannerys, un esercito di zoticoni pronti a tutto per un po' del suo reddito di cittadinanza, e che lo avrebbe aiutato a riportare lustro alla propria famiglia. <br><br>Il primo incontro fra i Targaryen e Khal Rogo fu organizzato da un tour operator del luogo che li portò a desinare in un ristorante etnico (3.5 su tripadvisor, €€/€€€): Giannerys era rimasto molto colpito dai modi gentili di Khal Rogo che, subito innamoratosi di Fabyerys, non si era neanche scaccolato i piedi durante la loro conversazione. Fabyerys intanto stava vivendo il proprio Spring Break emotivo, non vedendo l'ora di gettare il bikini ad una folla acclamante, e non capiva il perchè di quell'incontro, fantasticava come una ragazzina, senza sapere che il suo futuro era già stato scritto.</p>
+					</div>
+				</div>
+			</div>
+			<h3 id="title-chapter3"> Capitolo 3 - SAMWELL <button class="chapter-toggler" onclick="toggle_chapter(6);"><img id="toggler-img-6" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button>
+			</h3>
+			<div class="chapter" id="chapter6">
+				<div class="row">
+					<div class="col-md-4">
+						immagine
+					</div>
+					<div class="col-md-8 text-justify">
+						<p>Samwell Baji aveva appena compiuto 18 anni in quello che era stato il giorno peggiore della sua vita. Samwell era un tipo semplice: gli piaceva molto leggere, cucinare e guardare una mucca per amica, stava in pena per ogni mossa di Lorelei, che, dopo che aveva massacrato Rory, sperava di poter vedere a capo del bar dell'odioso Luke. Il suo personaggio preferito era però Sookie, con cui condivideva la passione per i dolciumi e che stimava per la voglia di gelato che l'aveva portata a decapitare il buon Prezzemolo nella puntata 2x03 "Una mamma va a gardaland, l'amica a mirabilandia". Mentre il padre e il fratello si occupavano della caccia e delle questioni estere, Baji aveva passato la sua gioventù tra la grande biblioteca del padre, il grande divano del padre, e l'enorme frigorifero del padre. Ancora non sapeva bene leggere, per cui fissava inebetito i libri sugli scaffali, provando talvolta ad aprirne alcuni. I suoi preferiti erano quelli di cucina, di cui poteva guardare le figure e provare ad addentarne le pagine, per mangiarsi quelle belle torte. Tante volte aveva provato a divorarsi le pagine di "Giallo Zafferculo" tanto che, quando poi era andato a mangiare una vera torta, era rimasto un po' stupito e deluso del fatto che non avesse il sapore della carta. <br>Il giorno del suo compleanno fu diverso da tutti gli altri, il padre, di solito schivo e astioso nei suoi confronti, lo aveva festeggiato con il sorriso sulle labbra, come se avesse appena vinto una battaglia: baji era ormai un adulto ed era dunque arrivato il momento di staccarsi dalla propria famiglia e prendersi delle responsabilità. I genitori lo avevano iscritto ai campi estivi dei "Fattori della Notte". "Ti piacerà e se vorrai potrai rimanerci!"" lo aveva rassicurato la madre, "Capirai i valori di un vero mucco" aveva continuato il padre "E' impossibile" gli aveva detto l'orgoglio, "E' rischioso" aveva ribadito l'esperienza "Ho fame" aveva concluso lo stomaco. Così Samwell si trovava a cavallo, alla volta del Castello Rosanero, dove avrebbe passato le giornate più dure della sua vita. Lì sarebbe stato allenato ad essere un uomo, avrebbe dovuto imparare l'utilizzo delle armi, partecipare a turni di guardia notturni ed avrebbe dovuto fare a meno della TV per tutto il periodo di permanenza. <br><br>I Fattori della Notte erano un antico esercito di reietti, spesso erano i secondigeniti delle famiglie nobili, a cui non spettava il titolo e che quindi cercavano qualcos'altro in cui credere, una poltrona diversa su cui sedersi. Erano tipo Liberi e Uguali o Fratelli d'Italia ma senza voti alle elezioni... mi correggo, erano proprio come Liberi e Uguali e Fratelli d'Italia! Il loro compito era quello di controllare i confini dei sette regni e fare la guardia alla barriera, una grande muraglia, eretta per combattere una minaccia antica, ormai semisconosciuta, che incombeva sui sette regni. Baji sarebbe divenuto uno di loro, aveva molta paura, ma non aveva idea del Mucco coraggioso che sarebbe diventato.</p>
+					</div>
+				</div>
+			</div>
+			<h3 id="title-chapter4"> Capitolo 4 - TOMFREY <button class="chapter-toggler" onclick="toggle_chapter(7);"><img id="toggler-img-7" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button>
+			</h3>
+			<div class="chapter" id="chapter7">
+				<div class="row">
+					<div class="col-md-4">
+						immagine
+					</div>
+					<div class="col-md-8 text-justify">
+						<p>Approdo del re era la capitale dei sette regni, qui risiedeva il re che, assieme al consiglio, composto da persone fidate e guidato dal primo stalliere, prendeva le decisioni che riguardavano l'intera regione. Il governo instauratosi da pochi anni era guidato da Giorgio Baratheon che aveva spodestato i Targaryen pochi anni prima, andando contro il voto del popolo e ponendo il veto sul governo dei biondi dragonidi. Non si sa bene come fossero andate le cose, ma si racconta che Giorgio, al tempo consigliere Targaryen e figura istituzionale considerata priva di valore, avesse deciso un bel giorno di tornare a contare qualcosa e avesse esiliato i Targaryen in seguito alla loro richiesta di far amministrare il tesoro ad un tizio di Genova, o di nome Genova. Si sa che far amministrare i soldi ad un tirchio genovese può portare solo ad una politica di austerità e risparmiosità, per questo Giorgio, spendaccione di primordine, aveva deciso di prendere in mano il potere, scavalcare il popolo ed espellere i Targaryen, dimostrando mancanza di sensibilità. E' anche vero che il popolo aveva sempre saputo che quel voto segreto, fatto in piazza, per alzata di mano, non avrebbe avuto molto valore, per cui aveva abbassato la testa, ben contento di tornare ai propri lavori, comandato da uno stabile governo tecnico. Di fatto il potere centrale risiedeva nel consiglio del re di cui facevano parte lo scaltro eunuco Baccys, il giullare arbitro di ogni contesa Lord Vezzish, il primo stalliere Raimondo Vianello (detto Tywin), padre della regina, ed il principe Tomfrey V dei Baratheon. Anche il re aveva ovviamente voce in capitolo, ma non si era più visto da quella volta in cui era uscito a comprare le sigarette, e quindi non partecipava mai alle riunioni del consiglio. <br> <br> La riunione di quel giorno fu presieduta come sempre da Baccys: "Iniziamo la riunione, siamo tutti?"" appena iniziato a parlare, già delle vistose gore di sudore impregnavano le sue ricche vesti "L'ordine del giorno riguarda l'alleanza con gli Stark, sovrani del nord, che dobbiamo stringere se vogliamo continuare a comandare sui sette regni" "Che barba, che noia" sbadigliò Raimondo, "Io propongo di andare a casa di Flower Stark e rubare l'amaro di Caterina" attaccò Vezzish "Non che questo abbia senso" ribattè Baccys, poi continuò "E se invece mi incontrassi con le figlie? Sara e Ilaria Stark?"" "Quali sono le tue intenzioni Baccys?" lo guardò storto Vezzish "Potrei accompagnarle a prendere un gelato, portarle a casa dopo scuola, potrei essere il loro baby sitter..." "Baccys, tu sei un eunuco!" lo incalzò Raimondo, una lacrimuccia di sudore scese sulla fronte di Baccys: "Anche noi eunuchi sappiamo amare :'( ". Il silenzio calò al tavolo, ognuno si arrovellava per trovare modi più intelligenti per legarsi con la famiglia Stark. Ad un tratto, il giovane principe Tomfrey, che ogni volta veniva fatto sedere sul trono e distratto con un paio di macchinine, con cui poteva giocare senza rompere agli adulti, prese la parola: "E se invece si organizzasse un matrimonio tra me e Sara Stark? Io so' bello, lei è caruccia, saremmo una coppia con la o maiuscola (cOppia)" "Vroom, vroom" manovrava le sue macchinine sul tavolo... Gli altri lo fissarono, "Non è una brutta idea" pensò Raimondo a voce alta, "Potrebbe andare" ribattè Baccys, "92 minuti di applausi" concluse Fantozzi arrampicatosi dalla finestra. "Datemi subito uno huawei che le scrivo su Whatsapp" Tuonò Tomfrey V, esaltato dalla fame di potere, "Ma sire, siamo in una cultura fantasy medioevale in un'era imprecisata, non esistono gli smartphone!" rispose Baccys in tono riverente "Hai ragione Baccys" riflettè Tomfrey "Vorrà dire che utilizzeremo metodi più antiquati, recupera la mia password dell'account MSN!" Triplice fischio di Vezzish, riunione finita, cala il sipario, inizia il regno di Tomfrey V.</p>
+					</div>
+				</div>
+			</div>
+			<h3 id="title-chapter5"> Capitolo 5 - SARA <button class="chapter-toggler" onclick="toggle_chapter(8);"><img id="toggler-img-8" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button>
+			</h3>
+			<div class="chapter" id="chapter8">
+				<div class="row">
+					<div class="col-md-4">
+						immagine
+					</div>
+					<div class="col-md-8 text-justify">
+						<p>Il tweet di Tomfrey non poteva essere stato più eloquente, l'hashtag #vogliosara aveva già fatto il giro dei 7 regni, secondo fra i trend topic soltanto al #royalwedding tra khal rogo e fabyeris: Tomfrey voleva sposare Sara Stark e la rossa di Piccolo Autunno era diventata tutta un fremito. Il messaggio su msn era arrivato subito dopo il tweet, Sara era stata appena inserita in una chat di gruppo, probabilmente da quella dispettosa di sua sorella Ilaria, e il pc, come spesso accadeva, si era impallato a causa dei numerosi trilli e richieste di amicizia dai soliti morti di fame: fattoredellanotte88, ditocorto_soloildito66, styvion_nano_lannister, luomodaimillevolti1, luomodaimillevolti2, luomodaimillevolti3, luomodaimillevolti. <br><br>Mentre Sara cercava di uscire da quella maledetta chat di gruppo e allo stesso tempo provava ad aggiornare il proprio stato scrivendo "Non ne poxo + degli skerzi di ilaruzia, giuro che quando sarà regina(allenatore 8bit) le taglierò la testa, il problema sarà dove mettere poi quella testa uhuh - Non ci sono più le mezze stagioni" (non ci sono più le mezze stagioni era da tempo immemore il motto della famiglia di Piccolo Autunno), senza perdere il filo del discorso, visto che sono un grande scrittore, ma a volte faccio periodi lunghi otto righi, stavo dicendo, mentre Sara cercava di uscire da quella maledetta chat, le arrivò una richiesta inattesa ma gradita: "TomfreyV_vogliodiventarprestounre vuole chattare con te". Sara accettò subito di buon grado e Tomfrey non si fece attendere: "Ciao sudicia Stark lol" iniziò con i modi gradevoli che lo contraddistinguevano "Ke fai? rx since ROTFL". Sara, che quasi inebetita osservava quella chat, con la gioia che le faceva battere forte il cuore, rispose subito "Uh, niente, sai qui a piccolo autunno una principessa come me non ha molto da fare. Mi piacerebbe tanto venire a rassettare i letti ad approdo del re xoxo" "Bene" rispose allora Tomfrey "Presto sarai la mia sgualdrina, domani si viene a cena da voi TVUKDB". <br><br> -La mia sgualdrina-, queste parole risuonavano nella mente di Sara Stark, i suoi occhi avevano la tipica forma a cuoricino che si vede pure nei cartoni, spense il PC e corse da Caterina che stava cercando di dare del cibo a Matte Flower: "Mamma, mamma, Tomfrey V vuole che io sia la sua sgualdrina!! Domani vengono a cena qui! Potrei diventare allenatore dell'8bit!". Anche Caterina accolse con gioia la notizia ed uscì subito per andare a fare spesa, per preparare la parmigiana di melanzane. Mentre Sara rimaneva nel suo stato di catalessi, entrò Ilaria, che subito capì la situazione e decise allora di aggiornare la sua lista nera: accanto ai nomi di Pippo Baudo e Young Signorino spuntò quello di Tomfrey V, che aveva conosciuto ai campi estivi della UISP (Unione Iraconda Setteregni Pediluvio) e aveva da subito odiato a morte. Aveva già capito che sposando la sorella, sarebbe entrato a far parte anche della sua vita... -non accadrà, se farà prima una brutta fine- pensò Ilaria con sguardo crudele, mentre questo pensiero riecheggiava nella sua testa -non accadrà-....</p>
+					</div>
+				</div>
+			</div>
+			<h3 id="title-chapter6"> Capitolo 6 - CELENRSEI <button class="chapter-toggler" onclick="toggle_chapter(9);"><img id="toggler-img-9" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button>
+			</h3>
+			<div class="chapter" id="chapter9">
+				<div class="row">
+					<div class="col-md-4">
+						immagine
+					</div>
+					<div class="col-md-8 text-justify">
+						<p>Celenrsei aveva vissuto un'infanzia facile nella famiglia Lannister, provando un amore per il fratello Gemmo pari soltanto all'odio per l'altro fratello, il nano poeta Styvion. Ai tre, Raimondo non aveva mai fatto mancare niente, del resto erano gli eredi di una delle famiglie più ricche dei 7 regni. Della propria giovinezza però, Celenrsei manteneva uno spiacevole ricordo, che spesso la accompagnava nelle notti insonni: una sera, mentre trascorreva una divertente serata tra amici, si era spinta troppo avanti nei meandri del veb. Più che andava avanti spippolando sullo smartphone, più che una voce la spingeva, finchè lo stregone non gli apparve: "Ragazza, sono veramente euforico!" attaccò, "Ma quando fai mille litri di latte in un giorno... fuori di mammella!". Celenrsei cliccò su quel maledetto link, non si sa se fu solo la curiosità a guidarla quella sera, oppure se una forza oscura avesse indotto la sua leggera mano, fatto sta che il sito maledetto si aprì all'istante. "Zootube.com, cosa potrà mai esserci di male? mille litri di latte, un'occasione da non perdere!" queste cose pensò Celenrsei, prima di vedere ciò che vide, prima che il baratro l'abbracciasse. Gettò lo smartphone a terra e corse via, nella notte buia. <br><br> Celenrsei tornava spesso col pensiero a quella notte, anche adesso che, dopo il matrimonio con Giorgio Baratheon, era diventata regina (quindi allenatore dell'ottobit), si sentiva una donna fragile di fronte a quell'avvenimento. Nella sua vita aveva affrontato poche peripezie, certo il suo sposo non era stato mai simpatico o divertente, ma il suo piano per farlo sparire aveva funzionato alla grande e se non altro adesso suo figlio Tomfrey era il sovrano. Lei intanto si era comprata la laurea in giurismuuudenza, che poteva permetterle di averla vinta in ogni discussione e di aiutare il figlio a comandare un regno, un regno che purtroppo avrebbe dovuto condividere, vista l'infatuazione di Tomfrey per quella sgualdrina di Sara Stark. Ma presto anche gli Stark sarebbero usciti a comprare le sigarette, come aveva fatto Giorgio, senza mai tornare. <br><br> Comunque Celenrsei teneva al volere del proprio figlio e avrebbe fatto, fin quando possibile, buon viso a cattivo gioco. D'altro canto l'alleanza con gli Stark dava lustro alla famiglia e permetteva di avere saldo comando anche sulle regioni del Nord, la Padania su tutte, da sempre un po' anarchica e sbarazzina. <br><br>I preparativi fervevano, presto Celenrsei e Tomfrey V, seguiti da un gruppo di leccapiedi, come Baccys e Vezzish, sarebbero partiti alla volta di Piccolo Autunno. Avrebbero assaggiato i manicaretti di Caterina, preso in giro la disabilità di Flower e gozzovigliato come veri Lannister, in attesa delle nozze più attese d'Europa. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="font-small pt-4 bg-light border-t-black">
+		<div class="container text-center text-dark text-md-left">
+			<div class="row">
+				<div class="col-md-6 mt-md-0 mt-3">
+					<h5 class="text-uppercase">Footer Content</h5>
+					<p>Here you can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h5 class="text-uppercase">Links</h5>
+					<ul class="list-unstyled">
+						<li><a class="text-light" href="#!">Link 1</a></li>
+						<li><a href="#!">Link 2</a></li>
+						<li><a href="#!">Link 3</a></li>
+						<li><a href="#!">Link 4</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h5 class="text-uppercase">Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Link 1</a></li>
+						<li><a href="#!">Link 2</a></li>
+						<li><a href="#!">Link 3</a></li>
+						<li><a href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center text-dark py-3">© 2018 Copyright:
+		<a class="text-dark"> Roberto Ciardi</a>
+		</div>
+	</footer>
+</body>
+
+</html>
