@@ -83,6 +83,10 @@
 	width: 100%;
 }
 
+.content a {
+	cursor: pointer;
+}
+
 .chapter-toggler {
 	position: absolute;
 	right: 10px;

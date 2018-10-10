@@ -17,7 +17,9 @@ $(document).ready(function() {
     /* function activated by scrolling on the page*/
     $(window).scroll(function(){
         var top = ($(window).scrollTop());
-        var sidebar_position = ($('.sidebar').position());
+        var sidebar_position = $('.sidebar').position();
+        var footer_position = $('footer').position();
+        var follower_height = $('.sidebar > .follower').height();
 
         /* titles must avoid sidebar toggler*/
         var title_pos = ($('#trama').position());
@@ -39,7 +41,7 @@ $(document).ready(function() {
         }
 
         /*sidebar must follow the scrolling*/
-        if(top > sidebar_position.top-70){
+        if(top > sidebar_position.top-70 && top+70+follower_height < footer_position.top){
             $('.sidebar > .follower').addClass('follow-me');
             $('#sidebar-toggler').addClass('follow-me');
         }

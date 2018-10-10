@@ -62,31 +62,31 @@
 				<ul>
 					<li>
 						<a onclick="move_title(0);" class="d-none d-sm-block" href="#title-chapter0">Personaggi</a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter0">Pers</a>
+						<a onclick="move_title(0);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter0">Pers</a>
 					</li>
 					<li>
 						<a onclick="move_title(1);" class="d-none d-sm-block" href="#title-chapter1">Capitolo 1 <span class="d-none d-lg-inline">- FLOWER</span></a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter1">Cap 1</a>
+						<a onclick="move_title(1);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter1">Cap 1</a>
 					</li>
 					<li>
 						<a onclick="move_title(2);" class="d-none d-sm-block" href="#title-chapter2">Capitolo 2 <span class="d-none d-lg-inline">- FABY</span></a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter2">Cap 2</a>
+						<a onclick="move_title(2);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter2">Cap 2</a>
 					</li>
 					<li>
 						<a onclick="move_title(3);" class="d-none d-sm-block" href="#title-chapter3">Capitolo 3 <span class="d-none d-lg-inline">- SAMWELL</span></a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter3">Cap 3</a>
+						<a onclick="move_title(3);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter3">Cap 3</a>
 					</li>
 					<li>
 						<a onclick="move_title(4);" class="d-none d-sm-block" href="#title-chapter4">Capitolo 4 <span class="d-none d-lg-inline">- TOMFREY</span></a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter4">Cap 4</a>
+						<a onclick="move_title(4);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter4">Cap 4</a>
 					</li>
 					<li>
 						<a onclick="move_title(5);" class="d-none d-sm-block" href="#title-chapter5">Capitolo 5 <span class="d-none d-lg-inline">- SARA</span></a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter5">Cap 5</a>
+						<a onclick="move_title(5);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter5">Cap 5</a>
 					</li>
 					<li>
 						<a onclick="move_title(6);" class="d-none d-sm-block" href="#title-chapter6">Capitolo 6 <span class="d-none d-lg-inline">- CELENRSEI</span></a>
-						<a class="d-sm-none d-md-none d-lg-none" href="#title-chapter6">Cap 6</a>
+						<a onclick="move_title(6);" class="d-sm-none d-md-none d-lg-none" href="#title-chapter6">Cap 6</a>
 					</li>
 
 					
@@ -103,7 +103,9 @@
 			</div>
 			<div class="content-section">
 				<h3 id="title-chapter0"> Personaggi </h3>
-				<h4><img src="/img/icons/pink_wolf.png" width="20" height="20" alt="stark"> Gli Stark  <button class="chapter-toggler" onclick="toggle_chapter(0);"><img id="toggler-img-0" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<a onclick="toggle_chapter(0);">
+					<h4><img src="/img/icons/pink_wolf.png" width="20" height="20" alt="stark"> Gli Stark <img class="chapter-toggler" id="toggler-img-0" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></h4>
+				</a>
 				<div class="chapter" id="chapter0">
 					<h5>Flower Stark</h5>
 					<p>Figlio di Caterina Stark, è l'ultimo della famiglia ed è costretto a letto a causa di un infortunio. Si annega nell'alcool assieme al fedele amico Maporax, in attesa che la sua storyline prosegua. Apparentemente il suo ruolo è quello di essere inutile... che lo sia davvero? </p>
@@ -112,21 +114,27 @@
 					<h5>J. Rogo e Robb Stark</h5>
 					<p>J. Rogo e Robb Stark sono gli altri fratelli della famiglia Stark, per ora giocano nel fango.</p>
 				</div>
-				<h4><img src="/img/icons/pink_dragon.png" width="20" height="20" alt="targaryen"> I Targaryen  <button class="chapter-toggler" onclick="toggle_chapter(1);"><img id="toggler-img-1" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<a onclick="toggle_chapter(1);">
+					<h4><img src="/img/icons/pink_dragon.png" width="20" height="20" alt="targaryen"> I Targaryen <img class="chapter-toggler" id="toggler-img-1" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></h4>
+				</a>
 				<div class="chapter" id="chapter1">
 					<h5>Fabyeris Targaryen</h5>
 					<p>Fabyeris è la sorella di Giannerys, nonostante sia promessa sposa di Khal Rogo, ha scelto di farsi un interrail nell'est per divertirsi e fare baldoria. </p>
 					<h5>Giannerys Targaryen</h5>
 					<p>Giannerys è il fratello di Fabyeris, sogna di poter guidare un esercito di rugbisti per riprendere il potere nei sette regni.</p>
 				</div>
-				<h4><img src="/img/icons/pink_lion.png" width="20" height="20" alt="lion"> I Lannister/Baratheon  <button class="chapter-toggler" onclick="toggle_chapter(2);"><img id="toggler-img-2" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<a onclick="toggle_chapter(2);">
+					<h4><img src="/img/icons/pink_lion.png" width="20" height="20" alt="lion"> I Lannister/Baratheon <img class="chapter-toggler" id="toggler-img-2" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></h4>
+				</a>
 				<div class="chapter" id="chapter2">
 					<h5>Celenrsei Lannister</h5>
 					<p>La regina madre ha sposato Giorgio Baratheon solo per comodità e adesso vive da vedova felice. Una volta è entrata su zootube, ma ha detto di non averlo fatto a posta (staccato o attaccato?).</p>
 					<h5>Tomfrey V</h5>
 					<p>Tomfrey V è il principe dei sette regni, ha i modi da mocciosetto ma vuole esercitare il proprio potere in tutti i modi perchè sennò non gioca più. Vorrebbe sposare Sara Stark, perchè lui può.</p>
 				</div>
-				<h4> <img src="/img/icons/pink_boar.png" width="20" height="20" alt="others">Altri Personaggi  <button class="chapter-toggler" onclick="toggle_chapter(3);"><img id="toggler-img-3" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></button></h4>
+				<a onclick="toggle_chapter(3);">
+					<h4> <img src="/img/icons/pink_boar.png" width="20" height="20" alt="others">Altri Personaggi <img class="chapter-toggler" id="toggler-img-3" src="/img/icons/down2.png" width="20" height="20" alt="toggle"></h4>
+				</a>
 				<div class="chapter" id="chapter3">
 					<h5>Sir Vezzish</h5>
 					<p>E' un ladro, a volte anche disonesto, perchè non fidarsi?</p>
@@ -138,8 +146,9 @@
 					<p>Samwell Baji è un ragazzo paffutello che ama leggere, guardare la tv e mangiare. Suo padre non ne è felice, quindi lo iscrive ai campi estivi dei Fattori della Notte</p>
 				</div>
 			</div>
-			<h3 id="title-chapter1"><span class="d-none d-md-inline"> Capitolo 1 - </span>FLOWER <button class="chapter-toggler" onclick="toggle_chapter(4);"><img id="toggler-img-4" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></button>
-			</h3>
+			<a onclick="toggle_chapter(4);">
+				<h3 id="title-chapter1"><span class="d-none d-md-inline"> Capitolo 1 - </span>FLOWER<img class="chapter-toggler" id="toggler-img-4" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></h3>
+			</a>
 			<div class="chapter" id="chapter4">
 				<div class="row">
 					<div class="col-md-4">
@@ -150,8 +159,9 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="title-chapter2"><span class="d-none d-md-inline"> Capitolo 2 - </span>FABY <button class="chapter-toggler" onclick="toggle_chapter(5);"><img id="toggler-img-5" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></button>
-			</h3>
+			<a onclick="toggle_chapter(5);">
+				<h3 id="title-chapter2"><span class="d-none d-md-inline"> Capitolo 2 - </span>FABY <img class="chapter-toggler" id="toggler-img-5" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></h3>
+			</a>
 			<div class="chapter" id="chapter5">
 				<div class="row">
 					<div class="col-md-4">
@@ -162,8 +172,9 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="title-chapter3"><span class="d-none d-md-inline"> Capitolo 3 - </span>SAMWELL <button class="chapter-toggler" onclick="toggle_chapter(6);"><img id="toggler-img-6" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></button>
-			</h3>
+			<a onclick="toggle_chapter(6);">
+				<h3 id="title-chapter3"><span class="d-none d-md-inline"> Capitolo 3 - </span>SAMWELL <img class="chapter-toggler" id="toggler-img-6" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></h3>
+			</a>
 			<div class="chapter" id="chapter6">
 				<div class="row">
 					<div class="col-md-4">
@@ -174,8 +185,9 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="title-chapter4"><span class="d-none d-md-inline"> Capitolo 4 - </span>TOMFREY <button class="chapter-toggler" onclick="toggle_chapter(7);"><img id="toggler-img-7" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></button>
-			</h3>
+			<a onclick="toggle_chapter(7);">
+				<h3 id="title-chapter4"><span class="d-none d-md-inline"> Capitolo 4 - </span>TOMFREY<img class="chapter-toggler" id="toggler-img-7" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></h3>
+			</a>
 			<div class="chapter" id="chapter7">
 				<div class="row">
 					<div class="col-md-4">
@@ -186,8 +198,9 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="title-chapter5"><span class="d-none d-md-inline"> Capitolo 5 - </span>SARA <button class="chapter-toggler" onclick="toggle_chapter(8);"><img id="toggler-img-8" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></button>
-			</h3>
+			<a onclick="toggle_chapter(8);">
+				<h3 id="title-chapter5"><span class="d-none d-md-inline"> Capitolo 5 - </span>SARA <img class="chapter-toggler" id="toggler-img-8" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></h3>
+			</a>
 			<div class="chapter" id="chapter8">
 				<div class="row">
 					<div class="col-md-4">
@@ -198,8 +211,9 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="title-chapter6"><span class="d-none d-md-inline"> Capitolo 6 - </span>CELENRSEI <button class="chapter-toggler" onclick="toggle_chapter(9);"><img id="toggler-img-9" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></button>
-			</h3>
+			<a onclick="toggle_chapter(9);">
+				<h3 id="title-chapter6"><span class="d-none d-md-inline"> Capitolo 6 - </span>CELENRSEI <img class="chapter-toggler" id="toggler-img-9" src="/img/icons/down2.png" width="30" height="30" alt="toggle"></h3>
+			</a>
 			<div class="chapter" id="chapter9">
 				<div class="row">
 					<div class="col-md-4">
