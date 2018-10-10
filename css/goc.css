@@ -61,6 +61,7 @@
 }
 
 .content h3 {
+	padding-top: 30px;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: black;
@@ -72,7 +73,7 @@
 }
 
 .content h3.moved-down {
-	padding-top: 65px;
+	padding-top: 65px !important;
 }
 
 .content h4, h5 {
