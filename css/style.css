@@ -153,10 +153,24 @@ a.nav-link {
     width: 100px;
 }
 
-@media only screen and (max-width: 400px) {
-    .parallax-hdr{
-        background-image: url("../img/header-mobile.png");
+@media only screen and (max-width: 600px) {
+
+    .parallax-hdr:before{
+        position:fixed;
+        /* Set a specific height */
+        min-height: 600px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image:url("../img/header-mobile.png");
+        z-index: 9999;
     }
+
+    /*.parallax-hdr{
+        background-image: url("../img/header-mobile.png");
+    }*/
 
     .img-social {
         width: 50px;
