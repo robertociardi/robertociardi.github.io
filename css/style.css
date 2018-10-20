@@ -223,11 +223,11 @@ h4 {
 .link-social {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .link-social:hover{
-    color: white;
+    color: black;
 }
 
 .social {
