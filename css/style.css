@@ -92,7 +92,7 @@ a.nav-link {
     color: black !important;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .navbar-brand {
         font-size: 20pt !important;
         width: 100%;
