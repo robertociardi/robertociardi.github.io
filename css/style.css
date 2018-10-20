@@ -88,7 +88,7 @@ a.nav-link {
 }
 
 .nav-link.active {
-    background-color: #EFEFEF !important;
+    background-color: #EEEEFF !important;
     color: black !important;
 }
 
@@ -99,7 +99,7 @@ a.nav-link {
         text-align: center;
     }
 
-    a.nav-ling {
+    a.nav-link {
         font-size: 12pt !important;
     }
 }
