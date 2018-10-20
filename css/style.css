@@ -1,7 +1,9 @@
 body {
     font-family: GeomanistRegular !important;
+    background-color: #EFEFEF !important;
 }
 
+/* font scheme */
 @font-face {
     font-family: 'CustomCraft';
     src: url('font/CustomCraft-Regular.woff') format('woff'),
@@ -31,7 +33,6 @@ body {
 
 .illusion {
     font-family: Illusion;
-    font-size: 15pt;
 }
 
 .geoReg {
@@ -42,12 +43,71 @@ body {
     font-family: GeomanistItalic;
 }
 
-.img-hdr {
-    width: 100%;
+/* color-scheme */
+.bg-color1{
+    background-color: #EEEEFF !important;
 }
 
-.goc-hdr {
-    margin-top: 60px;
+.bg-color2{
+    background-color: #7F7CAF !important;
+}
+
+.bg-color3{
+    background-color: #9Fb4C7 !important;
+}
+
+.bg-color4{
+    background-color: #28587B !important;
+}
+
+.bg-color5{
+    background-color: #9FB798 !important;
+}
+
+.bg-color6{
+    background-color: #CD5260 !important;
+}
+
+.text-carbon {
+    color: #A9A9A9 !important;
+}
+
+.text-color6 {
+    font-weight: bold;
+    color: #CD5260 !important;
+}
+
+/* navbar decoration */
+.navbar-brand {
+    font-size: 22pt !important;
+}
+
+a.nav-link {
+    font-size: 15pt;
+    color: #A9A9A9 !important;
+}
+
+.nav-link.active {
+    background-color: #EFEFEF !important;
+    color: black !important;
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-brand {
+        font-size: 20pt !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    a.nav-ling {
+        font-size: 12pt !important;
+    }
+}
+
+/* others */
+
+.img-fluid {
+    width: 100%;
 }
 
 .separator {
@@ -68,6 +128,95 @@ body {
     border-top-right-radius: 10px;
 }
 
-.img-fluid {
+.mid-container {
     width: 100%;
+}
+
+.link-content {
+    padding-top: 50px;
+}
+
+.parallax-hdr {
+    /* The image used */
+    background-image: url("../img/header-img.png");
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-social {
+    width: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+    .parallax-hdr{
+        background-image: url("../img/header-mobile.png");
+    }
+
+    .img-social {
+        width: 50px;
+    }
+}
+
+.id-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+.card {
+    border-style: solid;
+    border-color: white !important;
+    border-width: 1px !important;
+}
+
+h4 {
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.description {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2%;
+    padding: 2%;
+}
+
+.project-link {
+    color: #28587B;
+}
+
+.project-link:hover{
+    color: #7F7CAF;
+}
+
+.text-sub {
+    color: yellow !important;
+}
+
+.link-social {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.link-social:hover{
+    color: white;
+}
+
+.social {
+    text-align: center;
+    margin-bottom: 2%;
 }
