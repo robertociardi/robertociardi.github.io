@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+	<title> Roberto Ciardi </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/icons/favicon.png" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js" ></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127794423-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-127794423-1');
+	</script>
+
+			
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav id="spy-navbar" class="illusion navbar fixed-top navbar-light bg-color1">
+		<div class="container">
+			<a class="navbar-brand illusion" href="#">Roberto Ciardi</a>
+			<ul class="nav nav-pills text-carbon">
+				<li class="nav-item">
+					<a class="nav-link" href="#about-me">Chi Sono</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#my-projects">I miei progetti</a>
+				</li>
+				<li class="nav-item d-none d-sm-inline">
+					<a class="nav-link" href="#contact">Contattami</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../img/icons/ita.png" width="20"></a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../index.html"><img src="../img/icons/gb.png" width="20"></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div data-spy="scroll" data-target="#spy-navbar" data-offset="0">
+		<div class="parallax-hdr">
+		</div>
+
+		<div class="container-fluid bg-color1">
+			<div class="container">
+				<div class="row">
+					<h4 class="illusion mb-5" id="about-me">Chi sono</h4>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<img src="../img/me.png" width="250" class="id-card">
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<p class="text-justify bg-color3 description"> Sono cresciuto con le LEGO, i computer e la mia famiglia. Sono appassionato di scienza e tecnologia e mi piace scoprire: scoprire tutto sul mondo, sulla storia, sugli uomini, su me stesso. <br> Non è per niente facile, quindi ho deciso di scegliere la strada più semplice e mi sono laureato in Ingegneria Informatica all'Università di Pisa. Poi ho realizzato che non era abbastanza figo e che il mio lavoro era semplice da capire, per cui ho deciso di studiare  Embedded Computing System alla scuola Sant'Anna: più è complicato il nome, più è figo l'argomento!<br> Al momento sto finendo i miei studi, passando da un esame all'altro: ho studiato Intelligenze Artificiali, Internet of Things, Innovazione, Sistem Integrati... ma non voglio fermarmi qui...
+							<span class="text-color6">Sono un ragazzo ironico, nel corpo di un uomo, che si diverte come un bambino.</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-color4 text-light">
+			<div class="container">
+				<h4 class="illusion mb-5" id="my-projects">I miei progetti</h4>
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="bg-color5 card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Rete Neurale per la classificazione dei colori</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Computational Intelligence</h6>
+								<p class="card-text">Un'intelligenza artificiale sviluppata attraverso il Deep Learning toolbox di MATLAB, per riconoscere le differenze tra colori simili e risolvere problemi relativi alla stampa industriale. Recentemente da questo studio è nata una  <a class="project-link" href="https://ieeexplore.ieee.org/document/8489306?fbclid=IwAR3fh5LHQ4B1aBXTSFL5vIMAH4H1IkFrIZSJAw2FhBjDgocFimJz1pW_bKc">pubblicazione</a>, a cura dell'Università, pubblicata da IEEE</p>
+								<a href="https://github.com/FCD-EmSys/colors_evaluation_ANN" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="card bg-color6 mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Girasole Meccanico</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Design of Embedded System</h6>
+								<p class="card-text">Un sistema embedded sviluppato sulla board <a class="project-link" href="https://www.st.com/en/evaluation-tools/stm32f4discovery.html">STM32F407 </a> insieme ad un collega. Il sistema rappresenta un girasole meccanico, in grado di trovare e seguire una sorgente di luce.</p>
+								<a href="https://github.com/robertociardi/SolarTracker" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="card bg-color3 mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Autostrada</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Real Time Systems</h6>
+								<p class="card-text">Un progetto in linguaggio C, che simula graficamente un'autostrada i cui veicoli sono processi che vengono eseguiti in tempo reale ed in mutua esclusione. La parte grafica è stata realizzata attraverso la libreria <a class="project-link" href="https://liballeg.org/">Allegro</a>.</p>
+								<a href="https://github.com/robertociardi/RT_Highway_simulation" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="bg-color5 card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Interpolatore Lineare</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Digital Systems Design</h6>
+								<p class="card-text">Un progetto in linguaggio VHDL che realizza un <a class="project-link" href=https://it.wikipedia.org/wiki/Metodo_dell%27interpolazione_lineare">Interpolatore Lineare</a> per un segnale su 16 bit. Include alcuni test ed analisi fatte attraverso MATLAB</p>
+								<a href="https://github.com/robertociardi/VHDL_LinearInterpolator" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="card bg-color6 mb-3">
+							<div class="card-body">
+								<h5 class="card-title">FairLock</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Concurrent and Distributed Systems</h6>
+								<p class="card-text">Un progetto Java che implementa un Lock per la sincronizzazione fra Thread. Include un'analisi fatta attraverso il tool LTSA.</p>
+								<a href="https://github.com/robertociardi/FairLock" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="card bg-color3 mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Mastermind</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Reti Informatiche</h6>
+								<p class="card-text">Un progetto C che simula una partita online al gioco<a class="project-link" href="https://it.wikipedia.org/wiki/Mastermind">Mastermind</a>, con due client che possono connettersi ad un server per sfidarsi in una partita a turni.</p>
+								<a href="https://github.com/robertociardi/Mastermind" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="bg-color5 card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Cronometro</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Design of Embedded Systems</h6>
+								<p class="card-text">Un cronometro sviluppato sia in Simulink che su Erika Enterprise per essere flashato sulla Discovery Board, una semplice interfaccia grafica permette l'accesso ai comandi di un classico orologio dotato di cronometro, timer e sveglia.</p>
+								<a href="https://github.com/robertociardi/StopWatch" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="card bg-color6 mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Sistema di gestione per clinica veterinaria</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Programmazione Java</h6>
+								<p class="card-text">Un semplice sistema sviluppato in linguaggio Java, che permette ai clienti di una clinica veterinaria di prenotare e gestire le visite per i propri animali.</p>
+								<a href="https://github.com/robertociardi/VetClinic_Management_System" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="card bg-color3 mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Modellazione di un sistema con Mobius</h5>
+								<h6 class="card-subtitle mb-2 text-sub">Progetto per l'esame di Dependable Systems</h6>
+								<p class="card-text">Un semplice progetto sviluppato con <a class="project-link" href="https://www.mobius.illinois.edu/">Möbius</a> per l'analisi della tolleranza ai guasti di un sistema multiprocessore.<a href="https://github.com/robertociardi/FaultTolerantMultiprocessorModel" class="project-link">Dai un'occhiata</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-color1">
+			<div class="container">
+				<div class="row">
+					<h4 class="illusion" id="contact">Contattami</h4>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-6 social">
+						<a class="link-social" href="https://www.linkedin.com/in/roberto-ciardi-378324116/"><img class="img-social" src="../img/icons/linkedin.png"> </a>
+						<a class="link-social" href="https://www.linkedin.com/in/roberto-ciardi-378324116/"> LinkedIn </a>
+					</div>
+
+					<div class="col-md-3 col-6 social">
+						<a class="link-social" href="https://www.facebook.com/MrRobius"><img class="img-social" src="../img/icons/facebook.png"> </a>
+						<a class="link-social" href="https://www.facebook.com/MrRobius">Facebook</a>
+					</div>
+
+					<div class="col-6 col-md-3 social">
+						<a class="link-social" href="https://github.com/robertociardi"><img class="img-social" src="../img/icons/github.png"> </a>
+						<a class="link-social" href="https://github.com/robertociardi">Github </a>
+					</div>
+
+					<div class="col-6 col-md-3 social">
+						<a class="link-social" href="mailto:roberto.ciardi93@gmail.com"><img class="img-social" src="../img/icons/email.png"></a> 
+						<a class="link-social" href="mailto:roberto.ciardi93@gmail.com">E-mail</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Copyright -->
+	<div class="footer-copyright bg-color1 text-center py-3">© 2018 Copyright: <a> Roberto Ciardi</a></div>
+</body>
+
+</html>

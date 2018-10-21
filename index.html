@@ -8,8 +8,6 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js" ></script>
 	<script src="js/bootstrap.min.js"></script>
-	<!--Google Maps-->
-	<!--script src="https://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script-->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127794423-1"></script>
 	<script>
@@ -23,19 +21,6 @@
 			
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<!--div class="bg-primary text-light" id="cookies"> 
-		<div class="container mt-3 mb-3">
-			<div class="row">
-				<div class="col-md-8 col-sm-12">
-					A noi ci garbano i cookies e ce li mangiamo, facci sapere se questa cosa ti va bene e se vuoi donarci del latte in cui inzupparli. Leggiti anche la <a href="privacy.html">privacy policy</a> così puoi denunciarci.
-				</div> 
-				<div class="col-md-4 col-sm-12">
-					<button id="cookie-toggler" class="cookie-toggler btn btn-light border-mucchi">Ho capito, buoni i cookies
-						<img src="img/icons/cookies.png" width="20" height="20" alt="cookies"></button>	
-				</div>
-			</div>
-		</div>
-	</div-->
 	<nav id="spy-navbar" class="illusion navbar fixed-top navbar-light bg-color1">
 		<div class="container">
 			<a class="navbar-brand illusion" href="#">Roberto Ciardi</a>
@@ -46,18 +31,16 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#my-projects">My Projects</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item d-none d-sm-inline">
 					<a class="nav-link" href="#contact">Contact me</a>
 				</li>
-				<!--li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact-me</a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="https://www.linkedin.com/in/roberto-ciardi-378324116/">LinkedIn</a>
-					<a class="dropdown-item" href="https://github.com/robertociardi/">Github</a>
-					<a class="dropdown-item" href="https://www.facebook.com/MrRobius">Facebook</a>
-					<a class="dropdown-item" href="mailto:roberto.ciardi93@gmail.com">E-mail</a>
-				</div>
-				</li-->
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/icons/gb.png" width="20"></a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="it/index.html"><img src="img/icons/ita.png" width="20"></a>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -75,23 +58,13 @@
 						<img src="img/me.png" width="250" class="id-card">
 					</div>
 					<div class="col-sm-12 col-md-6">
-						<p class="text-justify bg-color3 description"> I'm a boy who's grown with LEGO, computers and family. I'm a fond of science and technology and I'd like to know and discover everything: everything about world, everything about history, everything about us, everything about me. <br> It's pretty difficult, so I've decided to choose the "easy way" and I've become a Computer Engineer at University of Pisa. Then I've realized I was not too cool and my work were preatty easy to understand, so I've decided to study Embedded Computing System: the longer the name, the cooler the topic! <br> Now, I'm actually finishing my way through different exams: I've studied Artificial Intelligence, Internet of Things, Innovation, Embedded sys... but I'm not stopping here....
+						<p class="text-justify bg-color3 description"> I've grown with LEGO, computers and family. I'm a fond of science and technology and I'd like to know and discover everything: everything about world, everything about history, everything about us, everything about me. <br> It's pretty difficult, so I've decided to choose the "easy way" and I've become a Computer Engineer at University of Pisa. Then I've realized I was not too cool and my work were preatty easy to understand, so I've decided to study Embedded Computing System: the longer the name, the cooler the topic! <br> Now, I'm actually finishing my way through different exams: I've studied Artificial Intelligence, Internet of Things, Innovation, Embedded sys... but I'm not stopping here....
 
 							<span class="text-color6">I'm an ironic boy, in the body of a man, who enjoy things as a child.</span></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--div class="container-fluid bg-color4" id="social">
-			<div class="row">
-				<div class="col-md-6">
-				Where you can find me:
-				</div>
-				<div class="col-md-6 col-sm-12">
-					Facebook | Github | Linkedin
-				</div>
-			</div>
-		</div-->
 		<div class="container-fluid bg-color4 text-light">
 			<div class="container">
 				<h4 class="illusion mb-5" id="my-projects">My Projects</h4>
@@ -101,7 +74,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Neural Network for color classification</h5>
 								<h6 class="card-subtitle mb-2 text-sub">Computational Intelligence exam project</h6>
-								<p class="card-text">An Artifical Neural Network developed with MATLAB Deep Learning toolbox, to recognize different between similar colors, and solve problems for industrial printing. Recently a <a class="project-link" href="https://ieeexplore.ieee.org/document/8489306?fbclid=IwAR3fh5LHQ4B1aBXTSFL5vIMAH4H1IkFrIZSJAw2FhBjDgocFimJz1pW_bKc">conference paper</a> about this work was published by IEEE</p>
+								<p class="card-text">An Artifical Neural Network developed with MATLAB Deep Learning toolbox, to recognize differences between similar colors, and solve problems for industrial printing. Recently a <a class="project-link" href="https://ieeexplore.ieee.org/document/8489306?fbclid=IwAR3fh5LHQ4B1aBXTSFL5vIMAH4H1IkFrIZSJAw2FhBjDgocFimJz1pW_bKc">conference paper</a> about this work was published by IEEE</p>
 								<a href="https://github.com/FCD-EmSys/colors_evaluation_ANN" class="project-link">Take a look</a>
 							</div>
 						</div>
@@ -121,7 +94,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Highway</h5>
 								<h6 class="card-subtitle mb-2 text-sub">Real Time Systems exam project</h6>
-								<p class="card-text">A C project that simulates an highway with vehicles that are actually processes that work real time and in mutual exclusion. The graphic part of the project was realized with <a class="project-link" href="https://liballeg.org/">Allegro library</a>.</p>
+								<p class="card-text">A C project that simulates an highway with vehicles that are actually processes, that work real time and in mutual exclusion. The graphic part of the project was realized with <a class="project-link" href="https://liballeg.org/">Allegro library</a>.</p>
 								<a href="https://github.com/robertociardi/RT_Highway_simulation" class="project-link">Take a look</a>
 							</div>
 						</div>
@@ -143,7 +116,7 @@
 							<div class="card-body">
 								<h5 class="card-title">FairLock</h5>
 								<h6 class="card-subtitle mb-2 text-sub">Concurrent and Distributed System exam project</h6>
-								<p class="card-text">A JAVA project to implement a Fair Lock system to manage synchronization between different Threads. It includes an analysis made using LTSA tool.</p>
+								<p class="card-text">A Java project to implement a Fair Lock system to manage synchronization between different Threads. It includes an analysis made using LTSA tool.</p>
 								<a href="https://github.com/robertociardi/FairLock" class="project-link">Take a look</a>
 							</div>
 						</div>
@@ -175,7 +148,7 @@
 							<div class="card-body">
 								<h5 class="card-title">Vet Clinic management system</h5>
 								<h6 class="card-subtitle mb-2 text-sub">Java Programming exam project</h6>
-								<p class="card-text">A simple system developed in JAVA language, that allows, vet clinic guests, to book and manage some visits for their pets.</p>
+								<p class="card-text">A simple system developed in Java language, that allows, vet clinic guests, to book and manage some visits for their pets.</p>
 								<a href="https://github.com/robertociardi/VetClinic_Management_System" class="project-link">Take a look</a>
 							</div>
 						</div>
@@ -183,9 +156,9 @@
 					<div class="col-sm-12 col-md-4">
 						<div class="card bg-color3 mb-3">
 							<div class="card-body">
-								<h5 class="card-title">Mobius</h5>
+								<h5 class="card-title">Möbius model for fault tolerance</h5>
 								<h6 class="card-subtitle mb-2 text-sub">Dependable Systems exam project</h6>
-								<p class="card-text">A simple <a class="project-link" href="https://www.mobius.illinois.edu/">Mobius</a> project for the analysis of a Fault Tolerant Multiprocessor Model</p>
+								<p class="card-text">A simple <a class="project-link" href="https://www.mobius.illinois.edu/">Mobius</a> project for the analysis of the Fault Tolerant of a Multiprocessor Model</p>
 								<a href="https://github.com/robertociardi/FaultTolerantMultiprocessorModel" class="project-link">Take a look</a>
 							</div>
 						</div>
