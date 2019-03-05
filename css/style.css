@@ -1,81 +1,43 @@
 body {
-    font-family: GeomanistRegular !important;
+    font-family: 'Rubik', sans-serif;
     background-color: #EFEFEF !important;
 }
 
-/* font scheme */
-@font-face {
-    font-family: 'CustomCraft';
-    src: url('font/CustomCraft-Regular.woff') format('woff'),
-        url('font/Custom-Craft-Regular.ttf') format('truetype');
-    font-style: normal;
+/* color scheme */
+
+.bg-color1 {
+    background-color: #222831;
 }
 
-@font-face {
-    font-family: Illusion;
-    src: url(font/illusion.otf);
+.bg-color2 {
+    background-color: #2D4059;
 }
 
-@font-face {
-    font-family: GeomanistRegular;
-    src: url(font/Geomanist/Webfont/Geomanist-Regular/geomanist-regular.woff);
+.bg-color3 {
+    background-color: #FF5722;
 }
 
-@font-face {
-    font-family: GeomanistItalic;
-    src: url(font/Geomanist/Webfont/Geomanist-Italic/geomanist-italic.woff);
+.bg-color4 {
+    background-color: #EEEEEE;
 }
 
-.craft {
-    font-family: CustomCraft;
-    font-size: 25pt;
+/* text color */
+.text-color1 {
+    color: #222831;;
 }
 
-.illusion {
-    font-family: Illusion;
+.text-color2 {
+    color: #2D4059;   
 }
 
-.geoReg {
-    font-family: GeomanistRegular;
+.text-color3 {
+    color: #FF5722;
 }
 
-.geoIt {
-    font-family: GeomanistItalic;
+.text-color4 {
+    color: #EEEEEE;
 }
 
-/* color-scheme */
-.bg-color1{
-    background-color: #EEEEFF !important;
-}
-
-.bg-color2{
-    background-color: #7F7CAF !important;
-}
-
-.bg-color3{
-    background-color: #9Fb4C7 !important;
-}
-
-.bg-color4{
-    background-color: #28587B !important;
-}
-
-.bg-color5{
-    background-color: #9FB798 !important;
-}
-
-.bg-color6{
-    background-color: #CD5260 !important;
-}
-
-.text-carbon {
-    color: #A9A9A9 !important;
-}
-
-.text-color6 {
-    font-weight: bold;
-    color: #EEEEFF !important;
-}
 
 /* navbar decoration */
 .navbar-brand {
