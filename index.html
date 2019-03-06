@@ -2,48 +2,63 @@
 <head>
 	<title> Roberto Ciardi </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
 	<link rel="shortcut icon" href="img/icons/favicon.png" />
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<script src="js/jquery-3.3.1.min.js" ></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127794423-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-127794423-1');
-	</script>
-
-	<script type="text/javascript">
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		        document.getElementById("return-to-top").style.display = "block";
-		    } else {
-		        document.getElementById("return-to-top").style.display = "none";
-		    }
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		    document.body.scrollTop = 0; // For Safari
-		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-	</script>
-
 			
 </head>
-<body class="bg-color4 text-color1">
-	<h1>Roberto Ciardi</h1>
-	<!-- Copyright -->
-	<div class="footer-copyright bg-color1 text-center py-3">© 2018 Copyright: <a> Roberto Ciardi</a></div>
+<body class="bg-color1 text-color4">
+	<div class="container">
+		<div class="main">
+			<div class="section">
+				<h1 class="text-color3">Roberto Ciardi</h1>
+				Embedded Computing Systems student @ Sant'Anna School of Pisa.		
+			</div>
+			<div class="section">
+				<h2 class="text-color3"># About me</h2>
+				<p>I've grown with LEGO, computers and family. I'm a fond of science and technology and I enjoy the act of <b>discovering</b>. 
+					<br> I've become a Computer Engineer at University of Pisa in 2015. Then I've moved to... Pisa, to study the MSc in Embedded Computing Systems. 
+					<br> Now, I'm actually finishing my way through different exams: I've studied Artificial Intelligence, Internet of Things, Innovation, Embedded sys... and I'm not stopping here...
+					<b><span class="text-color3">I'm an ironic boy, in the body of a man, who enjoy everything as a child.</span></b>
+				</p>
+			</div>
+			<div class="section">
+				<h2 class="text-color3"># My Projects</h2>
+				<p>Here are described some of the project I've worked on during my University Career, either by myself or with some colleagues. Some other works and further details  can be found on my <a href="https://www.github.com/robertociardi">github page</a>.</p>
+				<h4>A Neural Network for color classification</h4>
+				<p>An Artifical Neural Network developed with <b>MATLAB Deep Learning toolbox</b>, to recognize differences between similar colors, and solve problems for industrial printing. Recently a <a class="project-link" href="https://ieeexplore.ieee.org/document/8489306?fbclid=IwAR3fh4LHQ4B1aBXTSFL5vIMAH4H1IkFrIZSJAw2FhBjDgocFimJz1pW_bKc">conference paper</a> about this work was published by IEEE.</p>
+				
+				<h4><a href="https://github.com/robertociardi/SolarTracker">Solar Tracker System</a></h4>
+				<p>An embedded system developed on <a href="https://www.st.com/en/evaluation-tools/stm32f4discovery.html">STM32F407 discovery board</a>. The system represents a mechanical sunflower, detecting and following a light source.</p>
+				
+				<h4><a href="https://github.com/robertociardi/Wearable_fall_detector">Wearable Fall Detector</a></h4>
+				<p>A wearable fall detector useful for tracking elder people movement and allow instantaneous notification in case of falls.</p>
+				
+				<h4><a href="https://github.com/robertociardi/MIoBike">IoT Bike Sharing</a></h4>
+				<p>A simulated Bike Sharing system developed using Contiki (along with Cooja), and based on OM2M.</p>
+				
+				<h4><a href="https://github.com/robertociardi/ThreadPool">A c++ threadpool</a></h4>
+				<p>An implementation of a "fair" threadpool used in a Client-Server communication, to instantiate and execute works for clients.</p>
+
+				<h4><a href="https://github.com/robertociardi/ThreadPool">Java FairLock</a></h4>
+				<p>An implementation of a "fair" lock to synchronize communication between threads. </p>
+
+			</div>
+			<div class="section">
+				<h2 class="text-color3"># Contact me</h2>
+				<a href="mailto:roberto.ciardi93@gmail.com"><img src="img/icons/gmail.png" width="30"></a>
+				<a href="https://www.facebook.com/MrRobius"><img src="img/icons/facebook.png" width="30"></a>
+				<a href="https://www.linkedin.com/in/roberto-ciardi/"><img src="img/icons/linkedin.png" width="30"></a>
+				<a href="https://www.github.com/robertociardi"><img src="img/icons/github.png" width="30"></a>
+				<a href="https://t.me/mrrobius"><img src="img/icons/telegram.png" width="30"></a>
+			</div>
+		</div>
+		
+		<div class="footer bg-color3 text-color1">© 2019 Copyright: Roberto Ciardi</div>
+	</div>
 </body>
 
 </html>
+

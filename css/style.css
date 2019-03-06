@@ -1,10 +1,11 @@
 body {
+    margin: auto;
     font-family: 'Rubik', sans-serif;
-    background-color: #EFEFEF !important;
+    line-height: 1.6;
+    height: 100%;
 }
 
 /* color scheme */
-
 .bg-color1 {
     background-color: #222831;
 }
@@ -38,179 +39,68 @@ body {
     color: #EEEEEE;
 }
 
+/* section styling */
 
-/* navbar decoration */
-.navbar-brand {
-    font-size: 22pt !important;
+.container {
+    padding: 4em 4em;
+    position: relative;
+    min-height: 100%;
 }
 
-a.nav-link {
-    font-size: 15pt;
-    color: #A9A9A9 !important;
-}
 
-.nav-link.active {
-    background-color: #EEEEFF !important;
-    color: black !important;
-}
-
-.dropdown-menu.show {
-    min-width: 0;
-}
-
-.dropdown.show .nav-link {
-    background-color: #EEEEFF !important;
-}
-
-@media only screen and (max-width: 600px) {
-    .navbar-brand {
-        font-size: 20pt !important;
-        width: 100%;
-        text-align: center;
-    }
-
-    a.nav-link {
-        font-size: 12pt !important;
-    }
-}
-
-/* others */
-
-.img-fluid {
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
-.separator {
-    border-style: solid;
-    border-width: 5;
-    border-radius: 10px;
-    border-top-color: black;
-    border-bottom-color: pink;
+
+/* other styling*/
+h1 {
+    font-size: 40pt;
 }
 
-#cookies {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    z-index: 9999;
-    opacity: 0.9;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+h2 {
+    font-size: 20pt;
 }
 
-.mid-container {
-    width: 100%;
+a {
+    text-decoration: underline;
+    color: inherit;
 }
 
-.link-content {
-    padding-top: 50px;
-}
-
-.parallax-hdr {
-    /* The image used */
-    background-image: url("../img/header-img.png");
-
-    /* Set a specific height */
-    min-height: 600px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-.img-social {
-    width: 100px;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .parallax-hdr{
-        background-image: url("../img/header-mobile.png");
-    }
-
-    .img-social {
-        width: 50px;
-    }
-}
-
-.id-card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 100%;
-    border-style: solid;
-}
-
-.card {
-    border-style: solid;
-    border-color: white !important;
-    border-width: 1px !important;
+a:hover {
+    text-decoration: underline;
+    color: #2D4059; 
 }
 
 h4 {
-    padding-top: 40px;
-    text-align: center;
-    width: 100%;
+    color: #FF5722; 
+    margin: 0;
 }
 
-.description {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    border-radius: 2%;
-    padding: 2%;
+p {
+    text-align: justify;
+    margin: 0 20em 1em 0;
 }
 
-.project-link {
-    color: #28587B;
-}
+/* media queries */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 1em 1em 2em 1em;
+    }
 
-.project-link:hover{
-    color: #7F7CAF;
-}
+    h1 {
+        font-size: 30pt;
+    }
 
-.text-sub {
-    color: yellow !important;
-}
+    h2 {
+        font-size: 15pt;
+    }
 
-.link-social {
-    display: block;
-    text-decoration: none;
-    color: black;
-}
-
-.link-social:hover{
-    color: black;
-}
-
-.social {
-    text-align: center;
-    margin-bottom: 2%;
-}
-
-#return-to-top {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #F7B733;
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-}
-
-#return-to-top:hover {
-    background-color: #FC4A1A; /* Add a dark-grey background on hover */
+    p {
+        margin: 0 0 1em 0;
+    }
 }
