@@ -5,66 +5,134 @@
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/colors.css" rel="stylesheet">
 
 	<link rel="shortcut icon" href="img/icons/favicon.png" />
 			
 </head>
-<body class="bg-color1 text-color4">
+<body class="bg-primary text-primary">
+	<!--div class="bg-primary" id="header">
+		<div class="header-container">
+			<div class="logo text-blue">Roberto Ciardi.</div>
+			<div id="subtitle">
+				<div><a href="it/index.html">ITA.</a></div>
+				<div class="work-title text-red">
+					Embedded Computing Systems Engineer.
+				</div>
+				<div class="social text-green">
+					<a href="#contacts"> Contacts. </a>
+				</div>
+			</div>
+		</div>
+	</div-->
 	<div class="container">
-		<a href="it/index.html">ITA</a>
 		<div class="main">
+			<a href="it/index.html">ITA</a>
 			<div class="section">
-				<h1 class="text-color3">Roberto Ciardi</h1>
-				Embedded Computing Systems student @ Sant'Anna School of Pisa.		
+				<h1 class="text-blue">Roberto Ciardi
+				</h1>
+				Embedded Computing Systems Engineer.
+				<br>
+			<a href="mailto:roberto.ciardi93@gmail.com"><img src="img/icons/gmail.png" width="25"></a>
+				<a href="https://www.facebook.com/MrRobius"><img src="img/icons/facebook.png" width="25"></a>
+				<a href="https://twitter.com/ciardi_r"><img src="img/icons/twitter.png" width="25"></a>
+				<a href="https://www.linkedin.com/in/roberto-ciardi/"><img src="img/icons/linkedin.png" width="25"></a>
+				<a href="https://www.github.com/robertociardi"><img src="img/icons/github.png" width="25"></a>
+				<a href="https://t.me/mrrobius"><img src="img/icons/telegram.png" width="25"></a>		
 			</div>
 			<div class="section">
-				<h2 class="text-color3"># About me</h2>
-				<p>I've grown with LEGO, computers and family. I'm a fond of science and technology and I enjoy the act of <b>discovering</b>. 
-					<br> I've become a Computer Engineer at University of Pisa in 2015. Then I've moved to... Pisa, to study the MSc in Embedded Computing Systems. 
-					<br> Now, I'm actually finishing my way through different exams: I've studied Artificial Intelligence, Internet of Things, Innovation, Embedded sys... and I'm not stopping here...
-					<b><span class="text-color3">I'm an ironic boy, in the body of a man, who enjoys everything as a child.</span></b>
+				<h2 class="text-red"># About me</h2>
+				<p>I've grown with LEGO, computers. I'm a fond of science and technology and I enjoy the act of <b>discovering</b>. 
+					<br> I've become a <a href="https://computer.ing.unipi.it/inginf-l">Computer Engineer</a> at University of Pisa in 2015. Then I have obtained the MSc in <a href="https://www.santannapisa.it/en/education/masters-degree-embedded-computing-systems-call">Embedded Computing Systems</a>, jointly awarded by <span class="text-green">University of Pisa</span> and <span class="text-red">Sant'Anna School of Advanced Studies</span>. 
+					<br> During my university career I had the occasion to develop several projects, working on different type of technologies: from software programming to IoT, from Artificial Intelligence to Robotics, and beyond. The nature of the master degree course, totally thaught in English, along with a seven months internship in <span class="text-blue">United States</span>, has also helped me to deepen my language skills.  
+					<br><b>I'm an ironic boy, in the body of a man, who enjoys everything like a child.</b>
 				</p>
 			</div>
 			<div class="section">
-				<h2 class="text-color3"># My Projects</h2>
-				<p>Here are described some of the project I've worked on during my University Career, either by myself or with some colleagues. Some others and further details  can be found on my <a href="https://www.github.com/robertociardi">github page</a>.</p>
-				<h4><a href="https://github.com/robertociardi/ROS_robotic_arm.git">ROS robotic arm inspector</a></h4>
-				<p>A <a href="https://www.ros.org/">ROS</a> prototype of an arm for vehicles' inspection, thought in particular for the inspection of trains brake pads.</p>
+				<h2 class="text-yellow"># My Experience</h2>
+				<h3 class="text-green">* Work Experience</h3>
+				<h4> $ <a href="http://www.radsafety.com/">Radiation Safety and Control Services (RSCS Inc)</a></h4>
+				<p>
+					<i>August 2019 - March 2020</i>
+					<br>Seabrook, NH, United States.
+					<br><b>Embedded Developer Intern.</b>
+					<br>I have worked to the implementation of a real-time automatic mapping and localization system for a Surface Contamination Monitor for large-area surveys. The work was part of my master thesis project.
+				</p>
 
-				<h4><a href="https://github.com/robertociardi/color_evaluation_ANN.git">A Neural Network for color classification</a></h4>
-				<p>An Artificial Neural Network developed with <b>MATLAB Deep Learning toolbox</b>, to recognize differences between similar colors, and solve problems for industrial printing. Recently a <a class="project-link" href="https://ieeexplore.ieee.org/document/8489306?fbclid=IwAR3fh4LHQ4B1aBXTSFL5vIMAH4H1IkFrIZSJAw2FhBjDgocFimJz1pW_bKc">conference paper</a> about this work was published by IEEE.</p>
-				
-				<h4><a href="https://github.com/robertociardi/SolarTracker">Solar Tracker System</a></h4>
-				<p>An embedded system developed on <a href="https://www.st.com/en/evaluation-tools/stm32f4discovery.html">STM32F407 discovery board</a>. The system represents a mechanical sunflower, detecting and following a light source.</p>
-				
-				<h4><a href="https://github.com/robertociardi/Wearable_fall_detector">Wearable Fall Detector</a></h4>
-				<p>A wearable fall detector useful for tracking elder people movement and allowing instantaneous notification in case of falls.</p>
-				
-				<h4><a href="https://github.com/robertociardi/MIoBike">IoT Bike Sharing</a></h4>
-				<p>A simulated Bike Sharing system developed using Contiki (along with Cooja), and based on OM2M.</p>
-				
-				<h4><a href="https://github.com/robertociardi/ThreadPool">A c++ threadpool</a></h4>
-				<p>An implementation of a "fair" threadpool used in a Client-Server communication, to instantiate and execute jobs for clients.</p>
+				<h4> $ <a href="https://www.adacto.it/"><i>Ad</i>acto</a></h4>
+				<p>
+				<i>March 2015 - August 2015</i>
+				<br>Empoli, FI, Italy.
+				<br><b>Web Developer.</b>
+				</p>
 
-				<h4><a href="https://github.com/robertociardi/FairLock">Java FairLock</a></h4>
-				<p>An implementation of a "fair" lock to synchronize communication between threads. </p>
+				<h3 class="text-blue">* Education</h3>
+				<h4> @ <a href="https://www.unipi.it/index.php/english">University of Pisa</a> and <a href="https://www.santannapisa.it/en">Sant'Anna School of Advanced Studies</a></h4>
+				<p>
+					Master's Degree in Embedded Computing System.
+					<br>Graduated in 2018/2019
+				</p>
 
-				<h4><a href="https://github.com/robertociardi/VHDL_LinearInterpolator">VHDL Linear Interpolator</a></h4>
-				<p>VHDL implementation of a Linear Interpolator. Some useful analysis were made using Vivado tools and further work was made on MATLAB.</p>
+				<h4> @ <a href="https://www.unipi.it/index.php/english">University of Pisa </a></h4>
+				<p>
+					Bachelor's Degree in Computer Engineering.
+					<br>Graduated in 2014/2015
+				</p>
+				<h3 class="text-yellow">* Volunteering</h3>
+				<h4> @ <a href="https://past.date-conference.com/">Design Automation and Test in Europe conference 2019 (DATE 19) </a> </h4>
+				<p>
+					<i> March 2019 </i>
+					<br>Florence, Italy.
+					<br>Audio/Video assistant.
+				</p>
+				
+				<h4> @ <a href="https://www.internetfestival.it/">Internet Festival (IF 18) </a></h4>
+				<p>
+					<i> October 2018 </i>
+					<br>Pisa, Italy.
+					<br>Volunteer.
+				</p>
 
 			</div>
 			<div class="section">
-				<h2 class="text-color3"># Contact me</h2>
-				<a href="mailto:roberto.ciardi93@gmail.com"><img src="img/icons/gmail.png" width="30"></a>
-				<a href="https://www.facebook.com/MrRobius"><img src="img/icons/facebook.png" width="30"></a>
-				<a href="https://twitter.com/ciardi_r"><img src="img/icons/twitter.png" width="30"></a>
-				<a href="https://www.linkedin.com/in/roberto-ciardi/"><img src="img/icons/linkedin.png" width="30"></a>
-				<a href="https://www.github.com/robertociardi"><img src="img/icons/github.png" width="30"></a>
-				<a href="https://t.me/mrrobius"><img src="img/icons/telegram.png" width="30"></a>
+				<h2 class="text-green"> # My skills </h2>
+				<h3 class="text-blue">+ Programming Languages </h3>
+				<img src="img/icons/c.png" width="70" height="70">
+				<img src="img/icons/c_plus_plus.png" width="70" height="70">
+				<img src="img/icons/java.png" width="70" height="70">
+				<img src="img/icons/python.png" width="70" height="70">
+				<img src="img/icons/html5.png" width="70" height="70">
+				<img src="img/icons/css3.png" width="70" height="70">
+				<img src="img/icons/javascript.png" width="70" height="70">
+				<img src="img/icons/jquery.png" width="70" height="70">
+				<img src="img/icons/php.png" width="70" height="70">
+				
+				<h3 class="text-yellow">+ Software and Tools </h3>
+				<img src="img/icons/ros.png" width="70" height="70">
+				<img src="img/icons/matlab.png" width="70" height="70">
+				<img src="img/icons/linux.png" width="70" height="70">
+				<img src="img/icons/git.png" width="70" height="70"><img src="img/icons/mysql.png" width="70" height="70">
+				<img src="img/icons/sqllite.png" width="70" height="70">
+				<img src="img/icons/latex.png" width="70" height="70">
+			</div>
+			<div class="section">
+				<h2 class="text-red"> # Other / Awards </h2>
+				°I am member of the <a href="mensa">MENSA</a> association since 2017.
+				<br>°I have taken part to Samsung Innovation Camp 2019.
+				<br>°A project I have developed with a colleague, <a href="https://github.com/robertociardi/color_evaluation_ANN.git">Convolutional Neural Network for color recognition and classification</a>, has been part of a IEEE conference paper: <a class="project-link" href="https://ieeexplore.ieee.org/document/8489306?fbclid=IwAR3fh4LHQ4B1aBXTSFL5vIMAH4H1IkFrIZSJAw2FhBjDgocFimJz1pW_bKc">titolo paper</a></p>
+			</div>
+			<div class="section">
+				<h2 class="text-blue" id="contacts"># Contact me</h2>
+				<a href="mailto:roberto.ciardi93@gmail.com"><img src="img/icons/gmail.png" width="50"></a>
+				<a href="https://www.facebook.com/MrRobius"><img src="img/icons/facebook.png" width="50"></a>
+				<a href="https://twitter.com/ciardi_r"><img src="img/icons/twitter.png" width="50"></a>
+				<a href="https://www.linkedin.com/in/roberto-ciardi/"><img src="img/icons/linkedin.png" width="50"></a>
+				<a href="https://www.github.com/robertociardi"><img src="img/icons/github.png" width="50"></a>
+				<a href="https://t.me/mrrobius"><img src="img/icons/telegram.png" width="50"></a>
 			</div>
 		</div>
 		
-		<div class="footer bg-color3 text-color1">© 2019 Copyright: Roberto Ciardi</div>
+		<div class="footer bg-color3 text-color1">© 2020 Copyright: Roberto Ciardi</div>
 	</div>
 </body>
 

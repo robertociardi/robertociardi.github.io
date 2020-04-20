@@ -1,0 +1,84 @@
+:root {
+    --dark: #222831;
+    --white: #FFFFFF;
+    --light-gray: #FCFCFC;
+    --black: #000000;
+    --gray: #EBF0F6;
+    --light-blue: #3895D3;
+    --blue: #1261A0;
+    --navy: #132238;
+    --red: #D72323; /*#EA5455*/
+    --green: #36802D;
+    --woods: #006600;
+    --dark-gray: #333333;
+    --google-green: #008744;
+    --google-blue: #0057e7;
+    --google-red: #d62d20;
+    --google-yellow: #ffa700;
+    --google-white: #FFFFFF;
+}
+
+.bg-primary {
+    background-color: var(--google-white);
+}
+
+.text-primary {
+    color: var(--dark-gray);
+}
+
+.text-blue {
+    color: var(--google-blue);
+}
+
+.text-green {
+    color: var(--google-green);
+}
+
+.text-red {
+    color: var(--google-red);
+}
+
+.text-yellow {
+    color: var(--google-yellow);
+}
+
+/*.bg-red {
+    background-color: var(--red);
+}
+
+.bg-dark {
+    background-color: --var(--dark);
+}
+
+.bg-light {
+    background-color: #EEEEEE;
+}
+
+.bg-color1 {
+    background-color: #222831;
+}
+
+.bg-color3 {
+    background-color: #FF5722;
+}
+
+.bg-color4 {
+    background-color: #EEEEEE;
+}
+
+/* text color 
+.text-color1 {
+    color: #222831;;
+}
+
+.text-color2 {
+    color: #2D4059;   
+}
+
+.text-color3 {
+    color: #FF5722;
+}
+
+.text-color4 {
+    color: #EEEEEE;
+}*/
